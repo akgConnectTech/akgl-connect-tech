@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKGL Connect Tech | Cartão de Visitas Digital</title>
+  <meta name="description" content="AKGL Connect Tech — soluções em TI e suporte técnico. Conheça a equipe e entre em contato.">
+
+  <!-- Favicon simples em SVG (pode ser substituído por um arquivo .ico/.png se preferir) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230078D7%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 fill=%22%23fff%22 text-anchor=%22middle%22 font-family=%22Arial%22>A</text></svg>">
+
+  <!-- Ícones de redes sociais via CDN (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+  <!-- ===================== FUNDO ANIMADO (REDE DE CONEXÕES) ===================== -->
+  <!-- Canvas decorativo que desenha pontos conectados, reforçando o conceito "Connect Tech" -->
+  <canvas id="network-bg"></canvas>
+
+  <!-- ===================== CABEÇALHO ===================== -->
+  <header class="header" id="topo">
+    <div class="container header__inner">
+
+      <div class="brand">
+        <!-- LOGO: troque este SVG por uma <img src="assets/logo.png"> se tiver um logo próprio -->
+        <div class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40">
+            <rect x="2" y="2" width="44" height="44" rx="12" fill="none" stroke="currentColor" stroke-width="2.5"/>
+            <circle cx="16" cy="24" r="3.5" fill="#FF7A00"/>
+            <circle cx="32" cy="14" r="3.5" fill="#FFFFFF"/>
+            <circle cx="32" cy="34" r="3.5" fill="#FFFFFF"/>
+            <line x1="16" y1="24" x2="32" y2="14" stroke="currentColor" stroke-width="2"/>
+            <line x1="16" y1="24" x2="32" y2="34" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </div>
+        <div class="brand__text">
+          <span class="brand__name">AKGL <strong>Connect Tech</strong></span>
+          <span class="brand__slogan">Conectando pessoas e soluções através da tecnologia</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="eyebrow">Suporte &amp; Soluções em TI</span>
+        <h1>Tecnologia que <span class="text-gradient">conecta</span> pessoas, ideias e negócios.</h1>
+        <p class="hero__lead">
+          Somos a AKGL Connect Tech: uma equipe formada para levar suporte técnico
+          e soluções de tecnologia de qualidade a pequenas e médias empresas.
+        </p>
+        <div class="hero__actions">
+          <a href="#equipe" class="btn btn--primary">Conhecer a equipe</a>
+          <a href="#contato" class="btn btn--ghost">Falar com a gente</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SOBRE ===================== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <span class="section__eyebrow">Sobre nós</span>
+        <h2 class="section__title">Quem é a AKGL Connect Tech</h2>
+        <p class="section__text">
+          A AKGL Connect Tech nasceu durante um curso de <strong>Suporte de TI</strong>, a partir da união
+          de quatro estudantes com um objetivo em comum: aplicar o conhecimento técnico para resolver
+          problemas reais. Hoje, atuamos oferecendo suporte técnico, manutenção e soluções tecnológicas
+          acessíveis para pequenas e médias empresas que precisam de tecnologia confiável para crescer.
+        </p>
+        <p class="section__text">
+          Acreditamos que tecnologia boa é aquela que funciona em silêncio — e que cada chamado de suporte
+          é também uma chance de criar uma conexão de confiança com quem atendemos.
+        </p>
+
+        <div class="pillars">
+          <div class="pillar">
+            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+            <h3>Suporte técnico</h3>
+            <p>Atendimento ágil para resolver problemas de hardware, software e redes.</p>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+            <h3>Infraestrutura</h3>
+            <p>Configuração de redes e equipamentos pensada para o dia a dia da sua empresa.</p>
+          </div>
+          <div class="pillar">
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <h3>Segurança</h3>
+            <p>Boas práticas para manter dados e sistemas protegidos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EQUIPE ===================== -->
+    <section class="section section--alt" id="equipe">
+      <div class="container">
+        <span class="section__eyebrow">Nossa equipe</span>
+        <h2 class="section__title">As pessoas por trás da AKGL</h2>
+        <p class="section__text section__text--center">
+          Conheça os integrantes do time e entre em contato diretamente pelas redes abaixo.
+        </p>
+
+        <!--
+          ===========================================================================
+          GRID DE INTEGRANTES
+          Para adicionar/remover integrantes, copie ou exclua um bloco <article class="card">
+          inteiro. Veja o tutorial completo no final do README / resposta do chat.
+          ===========================================================================
+        -->
+        <div class="team-grid" id="team-grid">
+
+          <!-- INTEGRANTE 1 -->
+          <article class="card">
+            <div class="card__glow" aria-hidden="true"></div>
+            <img class="card__photo" src="assets/foto-integrante-1.jpg" alt="Foto de [Nome do Integrante 1]" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=A1&backgroundColor=0078D7&textColor=ffffff'">
+            <h3 class="card__name">Adryan</h3>
+            <p class="card__role">Hardware</p>
+            <p class="card__bio">Especialista em diagnóstico e resolução de problemas de hardware, com foco em atendimento ágil.</p>
+            <div class="card__social">
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn de Nome Completo 1" class="social-btn social-btn--linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram de Nome Completo 1" class="social-btn social-btn--instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp de Nome Completo 1" class="social-btn social-btn--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:nome1@akglconnect.com" aria-label="E-mail de Nome Completo 1" class="social-btn social-btn--email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- INTEGRANTE 2 -->
+          <article class="card">
+            <div class="card__glow" aria-hidden="true"></div>
+            <img class="card__photo" src="assets/foto-integrante-2.jpg" alt="Foto de [Nome do Integrante 2]" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=A2&backgroundColor=FF7A00&textColor=ffffff'">
+            <h3 class="card__name">Kauan henrique aparecido silva</h3>
+            <p class="card__role">Software</p>
+            <p class="card__bio">Responsável por configurar software. E gerenciar programas</p>
+            <div class="card__social">
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn de Nome Completo 2" class="social-btn social-btn--linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram de Nome Completo 2" class="social-btn social-btn--instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp de Nome Completo 2" class="social-btn social-btn--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:nome2@akglconnect.com" aria-label="E-mail de Nome Completo 2" class="social-btn social-btn--email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- INTEGRANTE 3 -->
+          <article class="card">
+            <div class="card__glow" aria-hidden="true"></div>
+            <img class="card__photo" src="assets/foto-integrante-3.jpg" alt="Foto de [Nome do Integrante 3]" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=A3&backgroundColor=0078D7&textColor=ffffff'">
+            <h3 class="card__name">Gabi</h3>
+            <p class="card__role">Redes</p>
+            <p class="card__bio"> Responsável pela conexão entre dispositivos.</p>
+            <div class="card__social">
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn de Nome Completo 3" class="social-btn social-btn--linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram de Nome Completo 3" class="social-btn social-btn--instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp de Nome Completo 3" class="social-btn social-btn--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:nome3@akglconnect.com" aria-label="E-mail de Nome Completo 3" class="social-btn social-btn--email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- INTEGRANTE 4 -->
+          <article class="card">
+            <div class="card__glow" aria-hidden="true"></div>
+            <img class="card__photo" src="assets/foto-integrante-4.jpg" alt="Foto de [Nome do Integrante 4]" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=A4&backgroundColor=FF7A00&textColor=ffffff'">
+            <h3 class="card__name">Lucas</h3>
+            <p class="card__role">Gestor</p>
+            <p class="card__bio">Faz a ponte entre clientes e a equipe técnica, organizar as tarefas.</p>
+            <div class="card__social">
+              <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener" aria-label="LinkedIn de Nome Completo 4" class="social-btn social-btn--linkedin">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/seu-usuario" target="_blank" rel="noopener" aria-label="Instagram de Nome Completo 4" class="social-btn social-btn--instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp de Nome Completo 4" class="social-btn social-btn--whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="mailto:nome4@akglconnect.com" aria-label="E-mail de Nome Completo 4" class="social-btn social-btn--email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTATO ===================== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <span class="section__eyebrow">Fale com a empresa</span>
+        <h2 class="section__title">Vamos conversar?</h2>
+
+        <div class="contact-grid">
+
+          <a class="contact-item" href="mailto:contato@akglconnecttech.com">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <div>
+              <span class="contact-item__label">E-mail</span>
+              <span class="contact-item__value">contato@akglconnecttech.com</span>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://wa.me/5511999999999" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <div>
+              <span class="contact-item__label">Telefone / WhatsApp</span>
+              <span class="contact-item__value">(11) 99999-9999</span>
+            </div>
+          </a>
+
+          <div class="contact-item contact-item--static">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <div>
+              <span class="contact-item__label">Endereço</span>
+              <span class="contact-item__value">Rua Exemplo, 123 — Campinas, SP</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="company-social">
+          <span>Siga a empresa:</span>
+          <a href="https://instagram.com/akglconnecttech" target="_blank" rel="noopener" aria-label="Instagram da AKGL Connect Tech" class="social-btn social-btn--instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com/company/akglconnecttech" target="_blank" rel="noopener" aria-label="LinkedIn da AKGL Connect Tech" class="social-btn social-btn--linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="ano-atual">2026</span> AKGL Connect Tech. Todos os direitos reservados.</p>
+      <p class="footer__note">Projeto desenvolvido para fins acadêmicos — curso de Suporte de TI.</p>
+    </div>
+  </footer>
+
+  <!-- Botão "voltar ao topo" -->
+  <button id="btn-topo" class="btn-topo" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script5.js"></script>
+</body>
+</html>
